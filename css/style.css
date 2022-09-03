@@ -27,7 +27,7 @@ body {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.307);
 }
 
-.box #pass-box {
+.box .pass-box {
     font-size: 30px;
     color: black;
     background-color: white;
@@ -35,6 +35,12 @@ body {
     width: 100%;
     padding: 7px;
     border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box #pass-box-copy {
+    cursor: pointer;
 }
 
 .box .row {
@@ -44,7 +50,7 @@ body {
     margin-top: 10px;
 }
 
-.generate-btn {
+#generate-btn {
     background-color: #95afc0;
     width: 100%;
     border: none;

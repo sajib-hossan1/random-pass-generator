@@ -6,17 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="main">
         <div class="box">
-            <span id="pass-box">Testing</span>
+            <div class="pass-box">
+                <span id="pass-box"></span>
+                <span id="pass-box-copy"><i class="fa-regular fa-copy"></i></span>
+            </div>
             <div class="row">
                 <div class="left">Password Length</div>
                 <div class="right">
-                    <input type="number" name="" id="" value="4" max="30" min="4">
+                    <input type="number" name="" id="total-char" value="8" max="30" min="6">
                 </div>
             </div>
             <div class="row">
@@ -51,7 +59,7 @@
                     <input type="checkbox" name="" id="containsSymbols">
                 </div>
             </div>
-            <button class="generate-btn">Generate</button>
+            <button id="generate-btn">Generate</button>
         </div>
     </div>
 
